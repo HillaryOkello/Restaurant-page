@@ -32,7 +32,7 @@ const pageContent = () => {
 
 const toggleTabs = () => {
   const tabs = document.createElement('div');
-  tabs.classList.add('nav', 'nav-tabs', 'mt-5', 'container');
+  tabs.classList.add('nav', 'nav-tabs', 'm-5', 'container');
   const about = document.createElement('h4');
   about.classList.add('nav-link', 'active');
   about.textContent = 'About';
