@@ -15,18 +15,18 @@ const navbar = () => {
 const pageContent = () => {
   const intro = document.createElement('div');
   intro.classList.add('container', 'mt-5', 'p-5');
-  const intro_text = document.createElement('h2');
-  intro_text.textContent = 'Welcome to Hilnex Restaurant';
-  intro_text.classList.add('text-center', 'text-white')
-  const welcome_text = document.createElement('p');
-  welcome_text.textContent = 'We provide you with the best dishes in town. We have a variety of dishes both local and international. We ensure quality in our dishes prepared by highly trained chefs';
-  welcome_text.classList.add('text-center', 'p-2', 'pb-5', 'text-white');
+  const introText = document.createElement('h2');
+  introText.textContent = 'Welcome to Hilnex Restaurant';
+  introText.classList.add('text-center', 'text-white');
+  const welcomeText = document.createElement('p');
+  welcomeText.textContent = 'We provide you with the best dishes in town. We have a variety of dishes both local and international. We ensure quality in our dishes prepared by highly trained chefs';
+  welcomeText.classList.add('text-center', 'p-2', 'pb-5', 'text-white');
   intro.style.background = `url(${banner2})`;
   intro.style.backgroundRepeat = 'no-repeat';
   intro.style.backgroundSize = 'cover';
   intro.style.backgroundPosition = 'bottom';
-  intro.appendChild(intro_text);
-  intro.appendChild(welcome_text);
+  intro.appendChild(introText);
+  intro.appendChild(welcomeText);
   content.appendChild(intro);
 };
 
@@ -55,12 +55,12 @@ const footer = () => {
   const foot = document.createElement('div');
   foot.classList.add('p-3', 'bg-primary', 'mt-5', 'mb-0');
   const footText = document.createElement('p');
-  footText.classList.add('text-center')
+  footText.classList.add('text-center');
   footText.textContent = 'Made by Hillary Okello';
   foot.appendChild(footText);
   content.appendChild(foot);
 };
 
-export { 
-  navbar, pageContent, toggleTabs, footer
+export {
+  navbar, pageContent, toggleTabs, footer,
 };

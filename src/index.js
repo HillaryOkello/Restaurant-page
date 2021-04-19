@@ -3,15 +3,15 @@ import about from './about';
 import menu from './menu';
 import contact from './contact';
 
-main.navbar()
-main.pageContent()
-main.toggleTabs()
-main.footer()
+main.navbar();
+main.pageContent();
+main.toggleTabs();
+main.footer();
 about();
 
 const tabContent = document.querySelector('.tab-content');
 const tabItem = document.querySelectorAll('.nav-link');
-const tabDetails = [about, menu,  contact];
+const tabDetails = [about, menu, contact];
 const selectItem = (index) => {
   tabContent.innerHTML = '';
   tabItem.forEach((item) => {
