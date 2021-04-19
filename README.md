@@ -36,7 +36,7 @@ There you can see updated information about the restaurant.
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://hillaryokello.github.io/Restaurant-page/)
 
 ## Getting Started
 
