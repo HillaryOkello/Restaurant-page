@@ -34,13 +34,13 @@ const toggleTabs = () => {
   const tabs = document.createElement('div');
   tabs.classList.add('nav', 'nav-tabs', 'm-5', 'container');
   const about = document.createElement('h4');
-  about.classList.add('nav-link', 'active');
+  about.classList.add('nav-link', 'tab-pane', 'show', 'active');
   about.textContent = 'About';
   const menu = document.createElement('h4');
-  menu.classList.add('nav-link');
+  menu.classList.add('nav-link', 'tab-pane');
   menu.textContent = 'Menu';
   const contact = document.createElement('h4');
-  contact.classList.add('nav-link');
+  contact.classList.add('nav-link', 'tab-pane');
   contact.textContent = 'Contact';
   const tabContent = document.createElement('div');
   tabContent.classList.add('tab-content', 'd-flex');
@@ -48,6 +48,7 @@ const toggleTabs = () => {
   tabs.appendChild(menu);
   tabs.appendChild(contact);
   content.appendChild(tabs);
+  content.appendChild(tabContent);
 };
 
 const footer = () => {

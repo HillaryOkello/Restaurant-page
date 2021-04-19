@@ -8,11 +8,9 @@ const list5 = menuList('Granola bars.........USH. 15,000');
 const list6 = menuList('Caviar.....USH. 40,000');
 
 const menuTab = document.createElement('div');
-menuTab.classList.add('d-flex');
+menuTab.classList.add('d-flex', 'container');
 const wrap = document.createElement('div');
-wrap.classList.add('mr-5');
 const wrapper = [list1.text, list2.text, list3.text, list4.text, list5.text, list6.text];
-
 
 wrapper.forEach((item) => {
   const wrapAll = document.createElement('div');
